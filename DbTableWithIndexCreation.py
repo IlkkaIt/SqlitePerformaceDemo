@@ -18,16 +18,16 @@ count=0
 start = timer()
 
 
-db.execute("BEGIN") #You can disable transaction by commenting this line altogether with "db.execute("COMMIT")" -line
+db.execute("BEGIN") #You can disable transaction by commenting this line altogether with the "db.execute("COMMIT")" -line
 
-db.execute("CREATE INDEX idxYear ON FILMS (year)") #Comment this line if Yuo dont want to create index on column "year"
+db.execute("CREATE INDEX idxYear ON FILMS (year)") #Comment this line if You don't want to create the index on column "year"
 while(count<10000):  
     RandomFilmName = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase) for _ in range(5))
     RandomFilmYear = random.randint(1900, 2000)  
     db.execute("INSERT INTO FILMS (name, year) VALUES (  ? , ? )",[RandomFilmName, RandomFilmYear])
     count +=1
 
-db.execute("COMMIT") #You can disable transaction by commenting this line altogether with "db.execute("BEGIN")" -line
+db.execute("COMMIT") #You can disable transaction by commenting this line altogether with the "db.execute("BEGIN")" -line
 
 
 end = timer()  
