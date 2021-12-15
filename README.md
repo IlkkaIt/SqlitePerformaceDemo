@@ -1,7 +1,4 @@
 # SqlitePerformaceDemo
-SqlitePerformaceDemo includes Python files for demonstrating/testing effect of transactions and indexing for performance.
-
-
 DbTableWithIndexCreation.py
 
 Creates 10 000 line 2 column sqlite-database inside your project folder. 
