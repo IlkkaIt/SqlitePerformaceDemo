@@ -29,7 +29,6 @@ while(count<10000):
 
 db.execute("COMMIT") #You can disable transaction by commenting this line altogether with the "db.execute("BEGIN")" -line
 
-
 end = timer()  
 
 tuloste = db.execute("SELECT * FROM FILMS").fetchall()

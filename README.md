@@ -16,7 +16,7 @@ QuerySpeedTimer.py
 
 In DbTableWithIndexCreation.py you can also comment or uncomment line creating index on column year and observe how indexing affects the speed of queries.
 
-Of course you can create index on column "year" elswhere for example in Sql-Workbench.
+Of course you can create index on column "year" elswhere for example in SQL-Workbench.
 
-After that you can run QuerySpeedTimer.py to check if indexing has any effect for the speed of the query.
+After that you can run QuerySpeedTimer.py to check if indexing has any effect to the speed of the query.
 
