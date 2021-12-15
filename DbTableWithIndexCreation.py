@@ -5,7 +5,6 @@ import os
 from timeit import default_timer as timer
 
 
-
 db = sqlite3.connect("SQlitePerformanceTestDB.db")
 db.isolation_level = None
 
@@ -18,7 +17,7 @@ count=0
 start = timer()
 
 
-db.execute("BEGIN") #You can disable transaction by commenting this line altogether with the "db.execute("COMMIT")" -line
+db.execute("BEGIN") #Comment this line together with the "db.execute("COMMIT")" -line if you want to disable transaction
 
 db.execute("CREATE INDEX idxYear ON FILMS (year)") #Comment this line if you don't want to create the index on column "year" 
 while(count<10000):
@@ -27,7 +26,7 @@ while(count<10000):
     db.execute("INSERT INTO FILMS (name, year) VALUES (  ? , ? )",[RandomFilmName, RandomFilmYear])
     count +=1
 
-db.execute("COMMIT") #You can disable transaction by commenting this line altogether with the "db.execute("BEGIN")" -line
+db.execute("COMMIT") #Comment this line together with the "db.execute("COMMIT")" -line if you want to disable transaction
 
 end = timer()  
 
