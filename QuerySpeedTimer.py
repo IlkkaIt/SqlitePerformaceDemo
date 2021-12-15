@@ -16,7 +16,6 @@ db.execute("SELECT * FROM FILMS WHERE year = ?", [RandomFilmYear])
 
 end = timer()
 
-
 SelectedFilmList = db.execute("SELECT * FROM FILMS WHERE year = ?", [RandomFilmYear]).fetchall()
 
 cursor.execute("SELECT COUNT (*) FROM FILMS WHERE year = ?", [RandomFilmYear])
