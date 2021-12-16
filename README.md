@@ -12,8 +12,6 @@ Remember to delete, rename or remove database file SQlitePerformanceTestDB.db be
 QuerySpeedTimer.py
 
 In DbTableWithIndexCreation.py you can also comment or uncomment line creating index on column year.
-
 Of course you can create index on column "year" elswhere for example in SQL-Workbench.
-
 After that you can run QuerySpeedTimer.py to check if indexing has any effect to the speed of the query.
 
