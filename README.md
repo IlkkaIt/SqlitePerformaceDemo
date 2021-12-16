@@ -6,12 +6,12 @@ You can custom number of lines in the database by changing the count-value in th
 If you make database larger, say 100 000 lines for example, operation described below may take quite a while (at least with regular home pc). 
 
 By commenting/uncommenting lines executing transaction (Begin-Commit) you can observe how transaction affects performance: 
-There is a simple timer telling how long it takes to create a database.
-Remember to delete, rename or move database file SQlitePerformanceTestDB.db before running DbTableWithIndexCreation.py again.
+There is a simple timer telling how long it takes to create a database table.
+Remember to delete, rename or remove database file SQlitePerformanceTestDB.db before running DbTableWithIndexCreation.py again.
 
 QuerySpeedTimer.py
 
-In DbTableWithIndexCreation.py you can also comment or uncomment line creating index on column year and observe how indexing affects the speed of queries.
+In DbTableWithIndexCreation.py you can also comment or uncomment line creating index on column year.
 
 Of course you can create index on column "year" elswhere for example in SQL-Workbench.
 
