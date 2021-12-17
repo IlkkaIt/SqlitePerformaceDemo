@@ -14,8 +14,8 @@ except:
    print("Table already exists")
 
 count=0
-start = timer()
 
+start = timer()
 
 db.execute("BEGIN") #Comment this line together with the "db.execute("COMMIT")" -line if you want to disable transaction
 
